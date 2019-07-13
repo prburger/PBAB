@@ -1,0 +1,53 @@
+﻿@*<script type="text/JavaScript"
+            src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script type="text/JavaScript">
+        jQuery(function () { //DOM not loaded, must use ready event
+            $('.hider').delay(5000).queue(function () { $(this).remove() });
+        });
+    </script>*@
+
+@model v2.Models.EmailViewModel
+
+<div class="jumbotron jumbo">
+    <div class="contact">
+        <div class="row pb-form">
+            <form method="post"
+                  asp-controller="Home"
+                  asp-action="SendEmail">
+                <div class="form-group row">
+                    <div class="col form-label">
+                        <label asp-for="Name">Name</label>
+                    </div>
+                    <div class="col form-input">
+                        <input type="text" asp-for="Name" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col form-label">
+                        <label asp-for="Name">Email</label>
+                    </div>
+                    <div class="col form-input">
+                        <input type="text" id="email" asp-for="Email" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col form-label">
+                        <label asp-for="Message">Message</label>
+                    </div>
+                    <div class="col form-input">
+                        <textarea id="message" asp-for="Message"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <button type="button"
+                                class="btn btn-outline-dark btn-sm btn-send">
+                            <i class="fas fa-share">&nbsp;</i>Send
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

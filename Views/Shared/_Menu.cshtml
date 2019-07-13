@@ -1,0 +1,41 @@
+﻿<nav class="navbar navbar-expand-sm fixed-top">    
+    <div class="container">
+        <div class="navbar-brand">
+            <img class="img-responsive pbab-logo" src="~/images/logo.svg" />
+        </div>
+
+        <button type="button"
+                class="navbar-toggler navbar-toggler-right"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-expanded="false"
+                aria-controls="navbarNav"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">Menu</span>
+        </button>
+
+        <div class="collapse navbar-collapse @*justify-content-end*@" id="navbarNav">
+            <ul class="navbar-nav float-right">
+                <li class="nav-item active">
+                    <a asp-controller="Home" asp-action="Index"><span class="link-text"><i class="fas fa-home" style="color: white;"></i>Home<span class="sr-only">(current)</span></span></a>
+                </li>
+                <li class="nav-item">
+                    <a asp-controller="Home" asp-action="About"><span class="link-text"><i class="fas fa-user" style="color: white;"></i>About us</span></a>
+                </li>
+                <li class="nav-item">
+                    <a asp-controller="Home" asp-action="Contact"><span class="link-text"><i class="fas fa-phone" style="color: white;"></i>Contact us</span></a>
+                </li>
+                <li class="nav-item">
+                    <a asp-controller="Home" asp-action="Products"><span class="link-text"><i class="fas fa-info" style="color: white;"></i>Products</span></a>
+                </li>
+                <li class="nav-item">
+                    <a asp-controller="Home" asp-action="Resources"><span class="link-text"><i class="fas fa-link" style="color: white;"></i>Resources</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://paulburger.trustpass.alibaba.com"><span class="link-text"><i class="fas fa-exchange-alt" style="color:white;"></i>Alibaba</span></a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,2 @@
+///<binding BeforeBuild='JavaScript, Stylesheets' Clean='Stylesheets, JavaScript' ProjectOpened='Stylesheets, JavaScript' />
+produceoutput=false
